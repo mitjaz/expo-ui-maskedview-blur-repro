@@ -9,7 +9,7 @@ npm install
 npx expo run:ios
 ```
 
-The screen shows four boxes in front of colored stripes. Boxes 2, 3 and 4 use the same `expo-linear-gradient` mask. The mask goes from `'black'` at the top to `'transparent'` at the bottom.
+The screen shows five boxes in front of colored stripes. Boxes 2 to 5 use the same `expo-linear-gradient` mask. The mask goes from `'black'` at the top to `'transparent'` at the bottom.
 
 1. `BlurView` without `MaskedView`: correct.
 2. `MaskedView` with a plain `View` child: correct.
