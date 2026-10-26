@@ -4,6 +4,7 @@ import { MaskedView } from '@expo/ui/community/masked-view';
 import { BlurView } from 'expo-blur';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
+import RNCMaskedView from '@react-native-masked-view/masked-view';
 
 // Same mask as the "Alpha-fade mask" docs example, but top to bottom
 const mask = (
@@ -69,6 +70,12 @@ export default function App() {
             <BlurView tint="dark" intensity={50} style={{ flex: 1 }} />
           )}
         </MaskedView>
+      </Case>
+
+      <Case label="5. As 3, @react-native-masked-view">
+        <RNCMaskedView style={StyleSheet.absoluteFill} maskElement={mask}>
+          <BlurView tint="dark" intensity={50} style={{ flex: 1 }} />
+        </RNCMaskedView>
       </Case>
 
       <StatusBar style="auto" />

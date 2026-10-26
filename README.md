@@ -15,5 +15,6 @@ The screen shows four boxes in front of colored stripes. Boxes 2, 3 and 4 use th
 2. `MaskedView` with a plain `View` child: correct.
 3. `MaskedView` with a `BlurView` child, both mounted at the same time: shows nothing.
 4. The same as box 3, but the `BlurView` mounts 1 second after the `MaskedView`: correct.
+5. The same as box 3, but with `@react-native-masked-view/masked-view` 0.3.2 instead of `MaskedView`: correct.
 
 ![Screenshot on the iPhone 17 simulator, iOS 26.4](screenshot.png)
